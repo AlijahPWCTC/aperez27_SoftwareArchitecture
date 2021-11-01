@@ -4,6 +4,8 @@ namespace Module_2_Assignment
 {
     public class Employee
     {
+        // Use constants for numbers or Strings that are repeated
+        // (all are called 'magic numbers', which are evil).
         private string REQUIRED_MSG = " is mandatory ";
         private  string NEWLINE = "\n";
 

@@ -14,13 +14,16 @@ namespace Module_2_Assignment
             _employees.Add(e);
             orientEmployee(e);
         }
+         // HRManager delegates work to employee.
         private void orientEmployee(Employee emp) {
             emp.doFirstTimeOrientation("B101");
         }
 
         public void outputReport(String ssn) {
+            // Find employee in list.
             foreach (Employee emp in _employees) {
                 if (emp.getSsn()==(ssn)) {
+                    // If found run report.
                     if (emp.hasMetWithHr() && emp.hasMetDeptStaff()
                             && emp.hasReviewedDeptPolicies() && emp.hasMovedIn()) {
                         emp.printReport();
